@@ -69,7 +69,7 @@ function increment() {
 // Or you can update it like React.useState's update
 function decrement() {
   store.set(prevState => ({
-    ...state,
+    ...prevState,
     count: state.count - 1
   });
 }
